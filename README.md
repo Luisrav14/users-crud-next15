@@ -26,20 +26,13 @@ cd users-crud-next15
 npm install
 ```
 
-3. **Crear carpeta `/data` con el archivo `users.json` vacío**:
-
-```bash
-mkdir data
-echo "[]" > data/users.json
-```
-
-4. **Levantar el servidor en desarrollo**:
+3. **Levantar el servidor en desarrollo**:
 
 ```bash
 npm run dev
 ```
 
-5. **Abrir en el navegador**:
+4. **Abrir en el navegador**:
 
 ```
 http://localhost:3000/
