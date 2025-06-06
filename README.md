@@ -16,8 +16,8 @@ Aplicación web desarrollada con [Next.js 15 App Router](https://nextjs.org/docs
 1. **Clonar el repositorio**:
 
 ```bash
-git clone https://github.com/tu-usuario/nombre-repo.git
-cd nombre-repo
+git clone https://github.com/Luisrav14/users-crud-next15
+cd users-crud-next15
 ```
 
 2. **Instalar dependencias**:
