@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 User Management App - Prueba Técnica
 
-## Getting Started
+Aplicación web desarrollada con [Next.js 15 App Router](https://nextjs.org/docs/app) y [Tailwind CSS](https://tailwindcss.com/), que permite registrar, editar, eliminar y visualizar usuarios, usando una "base de datos" estática en formato JSON.
 
-First, run the development server:
+## ✨ Características
+
+- ✅ Formulario de registro con validaciones.
+- ✅ Tabla editable con los usuarios registrados.
+- ✅ API RESTful construida con Next.js Server Actions (`app/api`).
+- ✅ Datos persistidos en archivo local `users.json`.
+- ✅ Estilos con Tailwind CSS.
+- ✅ Código limpio, modular y fácilmente escalable.
+
+## 🚀 Instrucciones para correr el proyecto
+
+1. **Clonar el repositorio**:
+
+```bash
+git clone https://github.com/tu-usuario/nombre-repo.git
+cd nombre-repo
+```
+
+2. **Instalar dependencias**:
+
+```bash
+npm install
+```
+
+3. **Crear carpeta `/data` con el archivo `users.json` vacío**:
+
+```bash
+mkdir data
+echo "[]" > data/users.json
+```
+
+4. **Levantar el servidor en desarrollo**:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. **Abrir en el navegador**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 Endpoints disponibles
 
-To learn more about Next.js, take a look at the following resources:
+| Método | Ruta            | Descripción                |
+| ------ | --------------- | -------------------------- |
+| GET    | /api/users      | Obtener todos los usuarios |
+| POST   | /api/users      | Crear nuevo usuario        |
+| PUT    | /api/users      | Editar usuario existente   |
+| DELETE | /api/users/[id] | Eliminar usuario por ID    |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Detalles técnicos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Framework: **Next.js 15** (`app/` directory + file-based routing)
+- Estilos: **Tailwind CSS**
+- Validación: **HTML5 nativa**
+- Persistencia: **Sistema de archivos con `fs`** (solo en entorno local)

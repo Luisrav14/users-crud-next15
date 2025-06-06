@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1749225649305,
+    "name": "Test update",
+    "email": "test@example.com"
+  },
+  {
+    "id": 1749229857865,
+    "name": "Test",
+    "email": "admin12@admin.com"
+  },
+  {
+    "id": 1749230111175,
+    "name": "Prueba 1",
+    "email": "test@example.com"
+  }
+]
